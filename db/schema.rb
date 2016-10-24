@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161021120744) do
+ActiveRecord::Schema.define(version: 20161024014447) do
+
+  create_table "communities", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "parent_community"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
