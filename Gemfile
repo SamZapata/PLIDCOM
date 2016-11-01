@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+# Use mysql as the database for Active Record
+gem 'mysql2', '>= 0.3.18', '< 0.5' 
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -33,7 +37,9 @@ gem 'devise', '~> 4.2'
 gem 'pg', '~> 0.19.0'
 gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem "bootstrap-sass-rails", '~> 3.1.0.0'
+gem "bootstrap-sass-rails", '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
